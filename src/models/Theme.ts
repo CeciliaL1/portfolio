@@ -28,7 +28,7 @@ export const themes: IThemes = {
     secondaryBgColor: "#101010",
     backgroundColor: "#000000",
     color: "#FFFFFF",
-    accentColor: "#5555bf",
+    accentColor: "#bf5598",
   },
   light: {
     name: "Day",
@@ -36,6 +36,6 @@ export const themes: IThemes = {
     secondaryBgColor: "#f0f0f0",
     backgroundColor: "#ffffff",
     color: "#000000",
-    accentColor: "#5555bf",
+    accentColor: "#6e3264",
   },
 };
