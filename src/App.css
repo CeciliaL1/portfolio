@@ -1,0 +1,7 @@
+.switch-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 50px;
+}
