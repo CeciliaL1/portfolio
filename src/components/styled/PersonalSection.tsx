@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface IPersonalStyleProps {
+  color?: string;
+}
+
 export const ImageContainerStyle = styled.div`
   background-image: url("/cecilia.jpg");
   background-position: center;
@@ -9,7 +13,8 @@ export const ImageContainerStyle = styled.div`
   border-radius: 50%;
 `;
 
-export const PersonalSectionStyle = styled.section`
-  border-bottom: 1px solid #e0e0e0;
-  height: 250px;
+export const PersonalSectionStyle = styled.section<IPersonalStyleProps>`
+  color: ${(props) => props.color || "#000000"};
+  width: 400px;
+  letter-spacing: 3px;
 `;

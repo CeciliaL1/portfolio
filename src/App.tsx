@@ -1,5 +1,5 @@
 import { useState, useReducer, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import { ThemeContext } from "./context/ThemeContext";
 import { themes, ActionTypeTheme } from "./models/Theme";
 import { SwitchTheme } from "./components/SwitchTheme";
