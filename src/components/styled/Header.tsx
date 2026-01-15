@@ -20,14 +20,15 @@ export const HeaderContainer = styled.header<IheaderProps>`
 
 export const HeaderTitle = styled.h1<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
+  text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
+  letter-spacing: 10px;
 `;
 
 export const SubHeaderTitle = styled.h2<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
+
   font-size: 1.5;
   text-align: center;
 `;
@@ -52,7 +53,7 @@ export const HeaderTextContainer = styled.div`
 `;
 export const HeaderText = styled.p<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
+  letter-spacing: 2px;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5;
