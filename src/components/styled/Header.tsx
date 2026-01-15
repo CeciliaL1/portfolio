@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface IheaderProps {
   color?: string;
   backgroundColor?: string;
+  accentcolor?: string;
 }
 
 export const HeaderContainer = styled.header<IheaderProps>`
@@ -14,7 +15,7 @@ export const HeaderContainer = styled.header<IheaderProps>`
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  box-shadow: rgba(191, 148, 182, 0.2) 0px 7px 29px 0px;
+  box-shadow: ${(props) => props.accentcolor}40 0px 7px 29px 0px;
   border-radius: 12px;
 `;
 
