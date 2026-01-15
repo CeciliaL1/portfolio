@@ -13,8 +13,10 @@ export const PersonalSection = () => {
       <section className="personal-section">
         <ImageContainerStyle
           as={motion.img}
-          initial={{ boxShadow: "0px 7px 18px 0px  rgba(191, 148, 182, 0.2)" }}
-          animate={{ boxShadow: "0px 14px 58px 0px  rgba(191, 148, 182, 0.5)" }}
+          initial={{ boxShadow: `0px 0px 0px 0px ${theme.accentColor}` }}
+          animate={{
+            boxShadow: `0px 0px 24px  ${theme.accentColor} `,
+          }}
           transition={{ duration: 2, ease: "easeOut" }}
         />
         <PersonalSectionStyle color={theme.color}>
