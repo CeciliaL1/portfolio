@@ -26,8 +26,11 @@ p {
 
 .personal-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  padding-left: 20%;
   margin-top: 40px;
 }

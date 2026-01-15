@@ -8,3 +8,8 @@ export const ImageContainerStyle = styled.div`
   width: 250px;
   border-radius: 50%;
 `;
+
+export const PersonalSectionStyle = styled.section`
+  border-bottom: 1px solid #e0e0e0;
+  height: 250px;
+`;
