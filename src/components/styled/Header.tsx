@@ -24,13 +24,19 @@ export const HeaderTitle = styled.h1<IheaderProps>`
   font-size: 3rem;
   text-align: center;
   letter-spacing: 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubHeaderTitle = styled.h2<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
 
-  font-size: 1.5;
+  font-size: 1.5rem;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Divider = styled.hr<IheaderProps>`
@@ -50,6 +56,10 @@ export const HeaderTextContainer = styled.div`
   margin: auto;
   width: 60%;
   margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const HeaderText = styled.p<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
