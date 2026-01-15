@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface IheaderProps {
   color?: string;
   backgroundColor?: string;
+  accentcolor?: string;
 }
 
 export const HeaderContainer = styled.header<IheaderProps>`
@@ -14,22 +15,29 @@ export const HeaderContainer = styled.header<IheaderProps>`
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  box-shadow: rgba(191, 148, 182, 0.2) 0px 7px 29px 0px;
+  box-shadow: ${(props) => props.accentcolor}40 0px 7px 29px 0px;
   border-radius: 12px;
 `;
 
 export const HeaderTitle = styled.h1<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
+  text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
+  letter-spacing: 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SubHeaderTitle = styled.h2<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
-  font-size: 1.5;
+
+  font-size: 1.5rem;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Divider = styled.hr<IheaderProps>`
@@ -49,10 +57,14 @@ export const HeaderTextContainer = styled.div`
   margin: auto;
   width: 60%;
   margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const HeaderText = styled.p<IheaderProps>`
   color: ${(props) => (props.color ? props.color : "black")};
-  font-family: monospace;
+  letter-spacing: 2px;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5;

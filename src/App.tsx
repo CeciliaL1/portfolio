@@ -1,10 +1,11 @@
 import { useState, useReducer, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import { ThemeContext } from "./context/ThemeContext";
 import { themes, ActionTypeTheme } from "./models/Theme";
 import { SwitchTheme } from "./components/SwitchTheme";
 import { ThemeReducer } from "./reducer/ThemeReducer";
 import { Header } from "./components/Header";
+import { PersonalSection } from "./components/PersonalSection";
 
 function App() {
   const root = document.documentElement;
@@ -36,6 +37,7 @@ function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <SwitchTheme></SwitchTheme>
         <Header></Header>
+        <PersonalSection></PersonalSection>
       </ThemeContext.Provider>
     </>
   );

@@ -15,7 +15,10 @@ export const Header = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <>
-      <HeaderContainer backgroundColor={theme.buttonBackground}>
+      <HeaderContainer
+        backgroundColor={theme.buttonBackground}
+        accentcolor={theme.accentColor}
+      >
         <HeaderTitle color={theme.color}>Cecilia Lepik</HeaderTitle>
         <SubHeaderTitle color={theme.color}>Front-End Developer</SubHeaderTitle>
         <Divider
