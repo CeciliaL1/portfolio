@@ -6,6 +6,7 @@ import { SwitchTheme } from "./components/SwitchTheme";
 import { ThemeReducer } from "./reducer/ThemeReducer";
 import { Header } from "./components/Header";
 import { PersonalSection } from "./components/PersonalSection";
+import { ProjectSection } from "./components/ProjectSection";
 
 function App() {
   const root = document.documentElement;
@@ -38,6 +39,7 @@ function App() {
         <SwitchTheme></SwitchTheme>
         <Header></Header>
         <PersonalSection></PersonalSection>
+        <ProjectSection></ProjectSection>
       </ThemeContext.Provider>
     </>
   );

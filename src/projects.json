@@ -1,14 +1,1 @@
-{
-  "projects": [
-    {
-      "name": "Project Alpha",
-      "description": "A cutting-edge project focused on AI development.",
-      "technologies": ["Python", "TensorFlow", "Keras"],
-      "deployed": true,
-      "link": "",
-      "status": "In Progress",
-      "image": "project_alpha.png",
-      "github": ""
-    }
-  ]
-}
+{}
