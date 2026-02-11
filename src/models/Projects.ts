@@ -7,5 +7,6 @@ export interface IProject {
   link: string;
   status: string;
   image: string;
+  isOnGithub: boolean;
   github: string;
 }

@@ -22,7 +22,7 @@ export const ProjectSectionStyle = styled.div<IProjectsProps>`
 
 export const ProjectCardStyle = styled.div<IProjectsProps>`
   padding: 20px;
-  border: 1px solid ${(props) => props.accentColor || "#000000"};
+
   width: 80%;
   margin: 10px auto;
   display: flex;
@@ -41,6 +41,7 @@ export const ProjectTitleStyle = styled.h2<IProjectsProps>`
 `;
 export const ProjectDescriptionStyle = styled.p<IProjectsProps>`
   color: ${(props) => props.color};
+  width: 400px;
 `;
 export const ProjectTechListStyle = styled.ul<IProjectsProps>`
   color: ${(props) => props.color};
@@ -51,8 +52,7 @@ export const ProjectLinkStyle = styled.a<IProjectsProps>`
   margin-top: 5px;
 `;
 export const ProjectImageStyle = styled.img`
-  width: 100%;
-  height: auto;
+  height: 150px;
   border-radius: 8px;
   margin-top: 10px;
 `;
@@ -63,4 +63,10 @@ export const ProjectStatusStyle = styled.span<IProjectsProps>`
   color: ${(props) => props.accentColor || "#000000"};
 
   margin-top: 5px;
+`;
+
+export const ProjectDividerStyle = styled.hr<IProjectsProps>`
+  width: 80%;
+  margin: 20px auto;
+  color: ${(props) => props.accentColor || "#000000"};
 `;
