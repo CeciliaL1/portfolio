@@ -8,6 +8,11 @@ import {
   ContactInputStyle,
   ContactTextAreaStyle,
   ContactConfirmationStyle,
+  ContactInfoH3style,
+  ContactInfoPstyle,
+  ContactInfoIconStyle,
+  ContactInfoContainerStyle,
+  ContactInfoAstyle,
 } from "./styled/ContactSection";
 
 export const ContactSection = () => {
@@ -99,8 +104,26 @@ export const ContactSection = () => {
         <div>
           {" "}
           <ContactInfoSectionStyle>
-            <h3>Contact Information</h3>
-            <p>Email: </p>
+            <ContactInfoH3style color={theme.color}>
+              Contact Information
+            </ContactInfoH3style>
+            <ContactInfoPstyle color={theme.color}>
+              Email:
+              <ContactInfoAstyle
+                color={theme.color}
+                href="mailto:cecilialepik@gmail.com"
+              >
+                Cecilialepik@gmail.com
+              </ContactInfoAstyle>
+            </ContactInfoPstyle>
+            <ContactInfoPstyle color={theme.color}>
+              Phonenumber:
+            </ContactInfoPstyle>
+            <ContactInfoContainerStyle>
+              <ContactInfoIconStyle accentColor={theme.accentColor}>
+                ICON
+              </ContactInfoIconStyle>
+            </ContactInfoContainerStyle>
           </ContactInfoSectionStyle>
         </div>
       </ContactContainerStyle>

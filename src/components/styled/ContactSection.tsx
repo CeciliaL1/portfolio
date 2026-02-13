@@ -76,14 +76,44 @@ export const ContactButtonStyle = styled.button<ContactSectionProps>`
   }
 `;
 
+export const ContactConfirmationStyle = styled.p<ContactSectionProps>`
+  color: ${(props) => props.color || "#000000"};
+  margin-top: 20px;
+`;
+
+/* Styled components for contact information section */
+
 export const ContactInfoSectionStyle = styled.div<ContactSectionProps>`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   margin-top: 20px;
   width: 100%;
 `;
 
-export const ContactConfirmationStyle = styled.p<ContactSectionProps>`
+export const ContactInfoPstyle = styled.p<ContactSectionProps>`
   color: ${(props) => props.color || "#000000"};
-  margin-top: 20px;
+`;
+
+export const ContactInfoAstyle = styled.a<ContactSectionProps>`
+  color: ${(props) => props.color || "#000000"};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const ContactInfoH3style = styled.h3<ContactSectionProps>`
+  color: ${(props) => props.color || "#000000"};
+  margin-bottom: 10px;
+`;
+export const ContactInfoContainerStyle = styled.div<ContactSectionProps>`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+export const ContactInfoIconStyle = styled.span<ContactSectionProps>`
+  color: ${(props) => props.accentColor || "#000000"};
+  margin-right: 10px;
 `;
