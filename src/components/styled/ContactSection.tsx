@@ -35,16 +35,19 @@ export const ContactInputStyle = styled.input<ContactSectionProps>`
   font-size: 16px;
   color: ${(props) => props.color || "#000000"};
   background-color: ${(props) => props.secondaryColor || "#ffffff"};
-`;
-export const ContactLabelStyle = styled.label<ContactSectionProps>`
-  margin-top: 10px;
-  color: ${(props) => props.color || "#000000"};
+  outline: none;
+
+  &:hover {
+    background-color: ${(props) => props.accentColor || "#000000"};
+    opacity: 50%;
+  }
 `;
 
 export const ContactTextAreaStyle = styled.textarea<ContactSectionProps>`
   padding: 10px;
   margin: 10px 0;
   border: 1px solid ${(props) => props.accentColor || "#000000"};
+  outline: none;
 
   border-radius: 5px;
   font-size: 16px;
@@ -52,6 +55,11 @@ export const ContactTextAreaStyle = styled.textarea<ContactSectionProps>`
   background-color: ${(props) => props.secondaryColor || "#ffffff"};
   resize: vertical;
   min-height: 100px;
+
+  &:hover {
+    background-color: ${(props) => props.accentColor || "#000000"};
+    opacity: 50%;
+  }
 `;
 export const ContactButtonStyle = styled.button<ContactSectionProps>`
   padding: 10px 20px;
@@ -73,4 +81,9 @@ export const ContactInfoSectionStyle = styled.div<ContactSectionProps>`
   flex-direction: column;
   margin-top: 20px;
   width: 100%;
+`;
+
+export const ContactConfirmationStyle = styled.p<ContactSectionProps>`
+  color: ${(props) => props.color || "#000000"};
+  margin-top: 20px;
 `;
