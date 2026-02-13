@@ -7,12 +7,13 @@ import { ThemeReducer } from "./reducer/ThemeReducer";
 import { Header } from "./components/Header";
 import { PersonalSection } from "./components/PersonalSection";
 import { ProjectSection } from "./components/ProjectSection";
+import { ContactSection } from "./components/ContactSection";
 
 function App() {
   const root = document.documentElement;
 
   const [isDarkTheme, setIsDarkTheme] = useState(
-    window.matchMedia("(prefers-color-scheme: light").matches
+    window.matchMedia("(prefers-color-scheme: light").matches,
   );
   const [theme, dispatch] = useReducer(ThemeReducer, themes.light);
 
@@ -40,6 +41,7 @@ function App() {
         <Header></Header>
         <PersonalSection></PersonalSection>
         <ProjectSection></ProjectSection>
+        <ContactSection></ContactSection>
       </ThemeContext.Provider>
     </>
   );
