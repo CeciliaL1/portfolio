@@ -15,6 +15,7 @@ export const ContactContainerStyle = styled.div<ContactSectionProps>`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 50px;
+  margin-bottom: 50px;
 `;
 
 export const ContactTitleStyle = styled.h2<ContactSectionProps>`
@@ -87,7 +88,7 @@ export const ContactInfoSectionStyle = styled.div<ContactSectionProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-bottom: 20px;
   margin-top: 20px;
   width: 100%;
 `;
@@ -104,16 +105,26 @@ export const ContactInfoAstyle = styled.a<ContactSectionProps>`
   }
 `;
 
+export const ContactInfoAIconStyle = styled.a<ContactSectionProps>`
+  color: ${(props) => props.accentColor || "#000000"};
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.accentColor || "#000000"};
+    opacity: 50%;
+  }
+`;
+
 export const ContactInfoH3style = styled.h3<ContactSectionProps>`
   color: ${(props) => props.color || "#000000"};
   margin-bottom: 10px;
 `;
-export const ContactInfoContainerStyle = styled.div<ContactSectionProps>`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
+
 export const ContactInfoIconStyle = styled.span<ContactSectionProps>`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 20px;
   color: ${(props) => props.accentColor || "#000000"};
   margin-right: 10px;
 `;

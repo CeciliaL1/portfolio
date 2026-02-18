@@ -11,10 +11,10 @@ import {
   ContactInfoH3style,
   ContactInfoPstyle,
   ContactInfoIconStyle,
-  ContactInfoContainerStyle,
+  ContactInfoAIconStyle,
   ContactInfoAstyle,
 } from "./styled/ContactSection";
-
+import { SiGithub, SiLinkedin } from "react-icons/si";
 export const ContactSection = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -108,7 +108,7 @@ export const ContactSection = () => {
               Contact Information
             </ContactInfoH3style>
             <ContactInfoPstyle color={theme.color}>
-              Email:
+              Email:{" "}
               <ContactInfoAstyle
                 color={theme.color}
                 href="mailto:cecilialepik@gmail.com"
@@ -117,13 +117,28 @@ export const ContactSection = () => {
               </ContactInfoAstyle>
             </ContactInfoPstyle>
             <ContactInfoPstyle color={theme.color}>
-              Phonenumber:
+              Phonenumber:{" "}
+              <ContactInfoAstyle color={theme.color} href="tel:0729681659">
+                0729681659
+              </ContactInfoAstyle>
             </ContactInfoPstyle>
-            <ContactInfoContainerStyle>
-              <ContactInfoIconStyle accentColor={theme.accentColor}>
-                ICON
-              </ContactInfoIconStyle>
-            </ContactInfoContainerStyle>
+
+            <ContactInfoIconStyle accentColor={theme.accentColor}>
+              <ContactInfoAIconStyle
+                accentColor={theme.accentColor}
+                href="https://github.com/cecilial1"
+                target="_blank"
+              >
+                <SiGithub size={32} />
+              </ContactInfoAIconStyle>
+              <ContactInfoAIconStyle
+                accentColor={theme.accentColor}
+                href="https://www.linkedin.com/in/cecilia-lepik-70360b213"
+                target="_blank"
+              >
+                <SiLinkedin size={32} />
+              </ContactInfoAIconStyle>
+            </ContactInfoIconStyle>
           </ContactInfoSectionStyle>
         </div>
       </ContactContainerStyle>
