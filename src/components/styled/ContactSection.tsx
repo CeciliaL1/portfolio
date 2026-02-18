@@ -42,6 +42,10 @@ export const ContactInputStyle = styled.input<ContactSectionProps>`
     background-color: ${(props) => props.accentColor || "#000000"};
     opacity: 50%;
   }
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 300px;
+  }
 `;
 
 export const ContactTextAreaStyle = styled.textarea<ContactSectionProps>`

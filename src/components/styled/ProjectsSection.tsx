@@ -27,6 +27,7 @@ export const ProjectCardStyle = styled.div<IProjectsProps>`
   margin: 10px auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   div {
@@ -42,6 +43,10 @@ export const ProjectTitleStyle = styled.h2<IProjectsProps>`
 export const ProjectDescriptionStyle = styled.p<IProjectsProps>`
   color: ${(props) => props.color};
   width: 400px;
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    font-size: 0.9rem;
+  }
 `;
 export const ProjectTechListStyle = styled.ul<IProjectsProps>`
   color: ${(props) => props.color};
@@ -55,6 +60,9 @@ export const ProjectImageStyle = styled.img`
   height: 150px;
   border-radius: 8px;
   margin-top: 10px;
+  @media screen and (max-width: 768px) {
+    height: 100px;
+  }
 `;
 export const ProjectGithubLinkStyle = styled.a<IProjectsProps>`
   color: ${(props) => props.accentColor || "#0000EE"};
