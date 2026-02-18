@@ -45,7 +45,7 @@ export const ContactInputStyle = styled.input<ContactSectionProps>`
   @media screen and (max-width: 768px) {
     margin: auto;
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 `;
 
