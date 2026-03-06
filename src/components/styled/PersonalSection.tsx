@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 interface IPersonalStyleProps {
   color?: string;
+  width?: string;
+  accentColor?: string;
+  font?: string;
 }
 
 export const ImageContainerStyle = styled.div`
@@ -20,7 +23,7 @@ export const ImageContainerStyle = styled.div`
 
 export const PersonalSectionStyle = styled.section<IPersonalStyleProps>`
   color: ${(props) => props.color || "#000000"};
-  width: 400px;
+  width: ${(props) => props.width || "600px"};
   letter-spacing: 3px;
 
   @media screen and (max-width: 768px) {
@@ -28,4 +31,21 @@ export const PersonalSectionStyle = styled.section<IPersonalStyleProps>`
       margin: 30px;
     }
   }
+`;
+
+export const PersonalSectionh3Style = styled.h3<IPersonalStyleProps>`
+  color: ${(props) => props.accentColor || "#000000"};
+`;
+
+export const PersonalSectionPStyle = styled.p<IPersonalStyleProps>`
+  color: ${(props) => props.color || "#000000"};
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+`;
+
+export const PersonalSectionSpanStyle = styled.span<IPersonalStyleProps>`
+  color: ${(props) => props.accentColor || "#000000"};
+  font-weight: bold;
+  font-family: ${(props) => props.font || "inherit"};
 `;

@@ -55,6 +55,39 @@ export const ProjectSection = () => {
       isOnGithub: true,
       github: "https://github.com/CeciliaL1/vue-tic-tac-toe",
     },
+    {
+      id: 4,
+      name: "Find-Activity",
+      description:
+        "A React and Typescript website for finding activities to do. The website is still in development and is not deployed yet. The website will use google maps to display activities in the area. The website will also have a search function to find activities based on location and type of activity.",
+      technologies: ["React", "Typescript", "CSS", "Google Maps API"],
+      deployed: false,
+      link: "",
+      status: "In Progress",
+      image: "",
+      isOnGithub: true,
+      github: "https://github.com/CeciliaL1/find-activity",
+    },
+    {
+      id: 5,
+      name: "MotionTracker",
+      description:
+        "A Website used for generating workout schedule based on user preferences. This was my final project during my education at Medieinstitutet. The website uses OpenAI to generate a workout schedule based on user preferences such as fitness level, goals, and health conditions.",
+      technologies: [
+        "React",
+        "Typescript",
+        "CSS",
+        "OpenAI API",
+        "Node.js",
+        "Express",
+      ],
+      deployed: false,
+      link: "",
+      status: "done",
+      image: "",
+      isOnGithub: true,
+      github: "https://github.com/CeciliaL1/motiontracker",
+    },
   ];
 
   return (
@@ -75,7 +108,9 @@ export const ProjectSection = () => {
                 </ProjectDescriptionStyle>
               </div>
               <div>
-                <ProjectImageStyle src={project.image} alt={project.name} />
+                {project.image && (
+                  <ProjectImageStyle src={project.image} alt={project.name} />
+                )}
                 <ProjectStatusStyle
                   accentColor={
                     project.status == "Done" ? theme.accentColor : "#ff003c"
