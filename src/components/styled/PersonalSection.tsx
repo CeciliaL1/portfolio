@@ -27,30 +27,27 @@ export const PersonalSectionStyle = styled.section<IPersonalStyleProps>`
   letter-spacing: 3px;
 
   @media screen and (max-width: 768px) {
-    p {
-      margin: 30px;
-    }
+    max-width: 400px;
   }
 `;
 
 export const PersonalSectionh3Style = styled.h3<IPersonalStyleProps>`
   color: ${(props) => props.accentColor || "#000000"};
   @media screen and (max-width: 768px) {
-    h3 {
-      margin: 30px;
-    }
+    margin-left: 50px;
   }
 `;
 
 export const PersonalSectionPStyle = styled.p<IPersonalStyleProps>`
   color: ${(props) => props.color || "#000000"};
   margin-top: 20px;
+
   line-height: 1.5;
   font-size: 1.1rem;
   @media screen and (max-width: 768px) {
-    p {
-      font-size: 0.8rem;
-    }
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 `;
 

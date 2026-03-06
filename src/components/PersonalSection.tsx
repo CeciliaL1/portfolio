@@ -95,25 +95,24 @@ export const PersonalSection = () => {
               Jest
             </PersonalSectionSpanStyle>
             .
-            <PersonalSectionPStyle color={theme.color} font={"georgia"}>
-              I also gained experience collaborating through GitHub and working
-              in agile teams. During my first internship (LIA) at Hjältebyrån
-              AB, I worked with WordPress, PHP, and JavaScript, which gave me
-              insight into maintaining and developing real-world client
-              projects. My second internship at Posh Industries focused more on
-              modern frontend development using TypeScript, React, and Vue —
-              strengthening my skills in building structured, scalable
-              applications.
-            </PersonalSectionPStyle>{" "}
-            <PersonalSectionPStyle color={theme.color} font={"georgia"}>
-              My current goal is to deepen my frontend expertise while expanding
-              my backend knowledge to better understand the full lifecycle of an
-              application. Before transitioning into tech, I worked as an
-              assistant nurse and skin therapist. Those roles strengthened my
-              communication skills, attention to detail, and ability to work
-              closely with people — qualities I now bring into my work as a
-              developer.
-            </PersonalSectionPStyle>
+          </PersonalSectionPStyle>
+          <PersonalSectionPStyle color={theme.color} font={"georgia"}>
+            I also gained experience collaborating through GitHub and working in
+            agile teams. During my first internship (LIA) at Hjältebyrån AB, I
+            worked with WordPress, PHP, and JavaScript, which gave me insight
+            into maintaining and developing real-world client projects. My
+            second internship at Posh Industries focused more on modern frontend
+            development using TypeScript, React, and Vue — strengthening my
+            skills in building structured, scalable applications.
+          </PersonalSectionPStyle>{" "}
+          <PersonalSectionPStyle color={theme.color} font={"georgia"}>
+            My current goal is to deepen my frontend expertise while expanding
+            my backend knowledge to better understand the full lifecycle of an
+            application. Before transitioning into tech, I worked as an
+            assistant nurse and skin therapist. Those roles strengthened my
+            communication skills, attention to detail, and ability to work
+            closely with people — qualities I now bring into my work as a
+            developer.
           </PersonalSectionPStyle>
         </PersonalSectionStyle>
       </section>
