@@ -27,8 +27,8 @@ export const PersonalSection = () => {
             Hi, I’m Cecilia
           </PersonalSectionh3Style>
           <PersonalSectionPStyle color={theme.color}>
-            a React and TypeScript developer who loves turning ideas into
-            structured, user-friendly web experiences.
+            a Front-end developer who loves turning ideas into structured,
+            user-friendly web experiences.
           </PersonalSectionPStyle>
           <PersonalSectionPStyle color={theme.color}>
             I’m naturally curious, a fast learner, and motivated by truly
