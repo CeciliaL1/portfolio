@@ -35,6 +35,11 @@ export const PersonalSectionStyle = styled.section<IPersonalStyleProps>`
 
 export const PersonalSectionh3Style = styled.h3<IPersonalStyleProps>`
   color: ${(props) => props.accentColor || "#000000"};
+  @media screen and (max-width: 768px) {
+    h3 {
+      margin: 30px;
+    }
+  }
 `;
 
 export const PersonalSectionPStyle = styled.p<IPersonalStyleProps>`
@@ -42,6 +47,11 @@ export const PersonalSectionPStyle = styled.p<IPersonalStyleProps>`
   margin-top: 20px;
   line-height: 1.5;
   font-size: 1.1rem;
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 export const PersonalSectionSpanStyle = styled.span<IPersonalStyleProps>`
